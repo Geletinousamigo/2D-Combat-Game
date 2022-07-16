@@ -939,9 +939,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 925565251}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 925565252}
+        m_TargetAssemblyTypeName: CarSelector, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1432,6 +1432,7 @@ GameObject:
   m_Component:
   - component: {fileID: 925565250}
   - component: {fileID: 925565251}
+  - component: {fileID: 925565252}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1475,6 +1476,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66dbb796f9aab6a44b44762ab09c124b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &925565252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925565249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6c3fb9a0262e0419d48aa496735de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 919132149155446097, guid: 460d77009da94e944806fb8e49a05272, type: 3}
+  - {fileID: 919132149155446097, guid: 2ea55c98b21ba7d47899be721acdc8c9, type: 3}
+  selectedCharacter: 0
+  Label: {fileID: 0}
 --- !u!1 &941777418
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,7 +1640,7 @@ GameObject:
   - component: {fileID: 1052243719}
   - component: {fileID: 1052243718}
   m_Layer: 5
-  m_Name: Button
+  m_Name: SelectCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
